@@ -6,5 +6,5 @@ require("berwyn.plugins.comment")
 require("berwyn.plugins.nvim-tree")
 require("berwyn.plugins.lualine")
 require("berwyn.plugins.telescope")
-
+require("berwyn.plugins.nvim-cmp")
 
