@@ -7,4 +7,7 @@ require("berwyn.plugins.nvim-tree")
 require("berwyn.plugins.lualine")
 require("berwyn.plugins.telescope")
 require("berwyn.plugins.nvim-cmp")
-
+require("berwyn.plugins.lsp.mason")
+require("berwyn.plugins.lsp.lspsaga")
+require("berwyn.plugins.lsp.lspconfig")
+require("berwyn.plugins.lsp.null-ls")
