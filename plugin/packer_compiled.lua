@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\share\\lua\\5.1\\?.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\Admin\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1694082368\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind.nvim",
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -168,6 +178,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -193,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,
@@ -222,6 +244,11 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd nvim-ts-autotag ]]
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
