@@ -7,4 +7,5 @@ toggleterm.setup({
 	open_mapping = [[<c-j>]],
 	size = 20,
 	start_in_insert = true,
+	close_on_exit = true,
 })

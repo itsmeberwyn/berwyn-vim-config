@@ -34,6 +34,7 @@ return packer.startup(function(use)
 
 	-- for colorscheme
 	use("bluz71/vim-nightfly-guicolors")
+	use("rebelot/kanagawa.nvim")
 
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")

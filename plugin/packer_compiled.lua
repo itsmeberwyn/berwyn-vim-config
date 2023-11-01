@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind.nvim",
