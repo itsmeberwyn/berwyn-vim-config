@@ -37,6 +37,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>w", ":NvimTreeFocus<CR>") -- focus on file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -51,4 +52,11 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
+-- to open terminal
 keymap.set("n", "<leader>jj", ":ToggleTerm<cr>")
+
+-- for easy indentions and outdentions
+keymap.set("n", "<lt>", "<lt><lt>", { silent = true, desc = "Outdent" })
+keymap.set("n", ">", ">>", { silent = true, desc = "Indent" })
+keymap.set("v", "<lt>", "<lt>gv", { silent = true, desc = "Indent" })
+keymap.set("v", ">", ">gv", { silent = true, desc = "Indent" })

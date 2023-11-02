@@ -131,6 +131,9 @@ return packer.startup(function(use)
 	-- for togger terminal
 	use("akinsho/toggleterm.nvim")
 
+	-- mini move, move block of lines
+	use({ "echasnovski/mini.move", branch = "stable" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
