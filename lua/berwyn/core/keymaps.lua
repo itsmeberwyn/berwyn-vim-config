@@ -41,6 +41,7 @@ keymap.set("n", "<leader>w", ":NvimTreeFocus<CR>") -- focus on file explorer
 keymap.set("n", "<leader>q", ":NvimTreeCollapse<CR>") -- collapse folder on file explorer
 
 -- telescope
+-- default mapping for scrolling in <C-u> = scroll up, <C-d> = scroll down
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
