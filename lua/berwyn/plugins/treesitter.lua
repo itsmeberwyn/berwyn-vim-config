@@ -18,10 +18,12 @@ treesitter.setup({
 	-- enable autotagging (w/ nvim-ts-autotag plugin)
 	autotag = { enable = true },
 	-- ensure these language parsers are installed
+	-- if you receive `Error detected while processing InsertLeave Autocommands for "<buffer=1>":` reinstall the language below using TSInstall <language>
 	ensure_installed = {
 		"json",
 		"javascript",
 		"typescript",
+		"python",
 		"tsx",
 		"yaml",
 		"html",
