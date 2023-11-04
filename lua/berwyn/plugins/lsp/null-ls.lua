@@ -22,6 +22,12 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.autopep8, -- python formatter
+		formatting.gofmt, -- go formatter
+		-- diagnostics.golangci_lint.with({ -- golang linter
+		-- 	diagnostics_postprocess = function(diagnostic)
+		-- 		diagnostic.code = diagnostic.message_id
+		-- 	end,
+		-- }),
 		diagnostics.pylint.with({ -- python linter
 			diagnostics_postprocess = function(diagnostic)
 				diagnostic.code = diagnostic.message_id

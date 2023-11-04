@@ -1,3 +1,5 @@
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+
 local lspconfig_status, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status then
 	return
@@ -97,6 +99,18 @@ lspconfig["lua_ls"].setup({
 
 -- configure python language server
 lspconfig["jedi_language_server"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure go language server
+-- lspconfig["golangci_lint_ls"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
+--
+-- configure go language server
+lspconfig["gopls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
