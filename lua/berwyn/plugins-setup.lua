@@ -134,6 +134,9 @@ return packer.startup(function(use)
 	-- mini move, move block of lines
 	use({ "echasnovski/mini.move", branch = "stable" })
 
+	-- lsp-lens
+	use({ "VidocqH/lsp-lens.nvim" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

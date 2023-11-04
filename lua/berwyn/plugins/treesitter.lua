@@ -8,9 +8,10 @@ end
 treesitter.setup({
 	-- enable syntax highlighting
 	-- this cause the issue when saving file that ask to add ! to override
-	-- highlight = {
-	-- 	enable = true,
-	-- },
+	-- if error occur on something try to reinstall language listed below
+	highlight = {
+		enable = true,
+	},
 	--
 	-- enable indentation
 	-- this one breaks the indentation
