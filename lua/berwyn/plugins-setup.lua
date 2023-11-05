@@ -137,6 +137,9 @@ return packer.startup(function(use)
 	-- lsp-lens
 	use({ "VidocqH/lsp-lens.nvim" })
 
+	-- for quick lookup for code usages
+	-- use({ "kevinhwang91/nvim-bqf" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
