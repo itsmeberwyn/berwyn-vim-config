@@ -86,8 +86,8 @@ nvimtree.setup({
 			},
 		},
 	},
-	-- 	git = {
-	-- 		ignore = false,
-	-- 	},
+	git = {
+		ignore = false,
+	},
 	on_attach = my_custom_trash_windows,
 })

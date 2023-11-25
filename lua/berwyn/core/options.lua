@@ -1,5 +1,8 @@
 local opt = vim.opt -- for conciseness
 
+-- making nightfly transparent
+vim.g.nightflyTransparent = true
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
