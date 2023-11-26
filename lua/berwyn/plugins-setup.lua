@@ -143,6 +143,8 @@ return packer.startup(function(use)
 	-- for quick lookup for code usages
 	-- use({ "kevinhwang91/nvim-bqf" })
 
+	use({ "ThePrimeagen/harpoon" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
