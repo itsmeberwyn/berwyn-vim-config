@@ -39,5 +39,6 @@ mason_null_ls.setup({
 		"eslint_d",
 		"autopep8",
 		"pylint",
+		"pyright",
 	},
 })

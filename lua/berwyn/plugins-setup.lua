@@ -143,7 +143,14 @@ return packer.startup(function(use)
 	-- for quick lookup for code usages
 	-- use({ "kevinhwang91/nvim-bqf" })
 
+	-- ease switching of file
 	use({ "ThePrimeagen/harpoon" })
+
+	-- add guide line
+	use({ "lukas-reineke/indent-blankline.nvim" })
+
+	-- fuck it dont work lol..., but save for later use
+	-- use({ "HallerPatrick/py_lsp.nvim" })
 
 	if packer_bootstrap then
 		require("packer").sync()
