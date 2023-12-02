@@ -246,6 +246,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["venv-selector.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\venv-selector.nvim",
+    url = "https://github.com/linux-cultist/venv-selector.nvim"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "C:\\Users\\Admin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-maximizer",

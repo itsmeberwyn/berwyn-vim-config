@@ -28,11 +28,11 @@ null_ls.setup({
 		-- 		diagnostic.code = diagnostic.message_id
 		-- 	end,
 		-- }),
-		diagnostics.pylint.with({ -- python linter
-			diagnostics_postprocess = function(diagnostic)
-				diagnostic.code = diagnostic.message_id
-			end,
-		}),
+		-- diagnostics.pylint.with({ -- python linter
+		-- 	diagnostics_postprocess = function(diagnostic)
+		-- 		diagnostic.code = diagnostic.message_id
+		-- 	end,
+		-- }),
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)

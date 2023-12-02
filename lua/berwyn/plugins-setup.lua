@@ -152,6 +152,11 @@ return packer.startup(function(use)
 	-- fuck it dont work lol..., but save for later use
 	-- use({ "HallerPatrick/py_lsp.nvim" })
 
+	use({
+		"linux-cultist/venv-selector.nvim",
+		dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim", "mfussenegger/nvim-dap-python" },
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

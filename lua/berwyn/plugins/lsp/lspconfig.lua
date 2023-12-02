@@ -98,10 +98,10 @@ lspconfig["lua_ls"].setup({
 })
 
 -- configure python language server
-lspconfig["jedi_language_server"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["jedi_language_server"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
 
 -- configure go language server
 -- lspconfig["golangci_lint_ls"].setup({
@@ -115,7 +115,7 @@ lspconfig["gopls"].setup({
 	on_attach = on_attach,
 })
 
--- lspconfig["pyright"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- })
+lspconfig["pyright"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
