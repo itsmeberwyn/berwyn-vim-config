@@ -20,3 +20,8 @@ require("berwyn.plugins.lsp.lsplens")
 require("berwyn.plugins.harpoon")
 require("berwyn.plugins.indent-blankline")
 require("berwyn.plugins.venv-selector")
+
+-- Config V2
+
+-- require("berwyn_v2.core")
+-- require("berwyn_v2.lazy")
