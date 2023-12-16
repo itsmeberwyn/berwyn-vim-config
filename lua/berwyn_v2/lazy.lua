@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "berwyn_v2.plugins" } }, {
+require("lazy").setup({ { import = "berwyn_v2.plugins" }, { import = "berwyn_v2.plugins.lsp" } }, {
 	install = {
 		colorscheme = { "nightfly" },
 	},

@@ -32,3 +32,19 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- for easy indentions and outdentions
+keymap.set("n", "<lt>", "<lt><lt>", { silent = true, desc = "Outdent" })
+keymap.set("n", ">", ">>", { silent = true, desc = "Indent" })
+keymap.set("v", "<lt>", "<lt>gv", { silent = true, desc = "Indent" })
+keymap.set("v", ">", ">gv", { silent = true, desc = "Indent" })
+
+-- harpoon config
+keymap.set("n", "<leader><leader>", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", {})
+keymap.set("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", {})
+keymap.set("n", "<A-1>", ":lua require('harpoon.ui').nav_file(1)<CR>", {})
+keymap.set("n", "<A-2>", ":lua require('harpoon.ui').nav_file(2)<CR>", {})
+keymap.set("n", "<A-3>", ":lua require('harpoon.ui').nav_file(3)<CR>", {})
+keymap.set("n", "<A-4>", ":lua require('harpoon.ui').nav_file(4)<CR>", {})
+keymap.set("n", "<A-n>", ":lua require('harpoon.ui').nav_next()<CR>", {})
+keymap.set("n", "<A-p>", ":lua require('harpoon.ui').nav_prev()<CR>", {})
+keymap.set("n", "<leader>c", ":lua require('harpoon.mark').clear_all()<CR>", {})
