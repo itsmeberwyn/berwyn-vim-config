@@ -19,6 +19,8 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
+				"php",
+				"blade_formatter",
 			},
 		})
 
@@ -44,9 +46,11 @@ return {
 				formatting.isort,
 				formatting.black,
 				formatting.gofmt,
+				formatting.phpcbf,
 
 				diagnostics.golangci_lint,
 				diagnostics.pylint,
+				diagnostics.phpstan,
 				diagnostics.eslint_d.with({ -- js/ts linter
 					condition = function(utils)
 						return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs

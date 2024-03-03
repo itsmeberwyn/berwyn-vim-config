@@ -10,6 +10,10 @@ local keymap = vim.keymap -- for conciseness
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+-- keep cursor to center
+keymap.set("n", "k", "kzz", { desc = "keep center up" })
+keymap.set("n", "j", "jzz", { desc = "keep center bot" })
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
