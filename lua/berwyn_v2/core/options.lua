@@ -5,8 +5,8 @@ opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
 
 -- tabs & indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
@@ -40,3 +40,6 @@ opt.splitbelow = true
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- add verical column
+opt.colorcolumn = "120"

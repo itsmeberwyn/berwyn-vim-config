@@ -19,6 +19,8 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
+				"phpstan",
+				"phpcbf",
 			},
 		})
 
@@ -44,7 +46,9 @@ return {
 				formatting.isort,
 				formatting.black,
 				formatting.gofmt,
+				formatting.phpcbf,
 
+				diagnostics.phpstan,
 				diagnostics.golangci_lint,
 				diagnostics.pylint,
 				diagnostics.eslint_d.with({ -- js/ts linter

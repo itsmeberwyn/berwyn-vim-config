@@ -1,4 +1,3 @@
-local keymap = vim.keymap -- for conciseness
 -- set leader key to space
 vim.g.mapleader = " "
 
@@ -48,3 +47,8 @@ keymap.set("n", "<A-4>", ":lua require('harpoon.ui').nav_file(4)<CR>", {})
 keymap.set("n", "<A-n>", ":lua require('harpoon.ui').nav_next()<CR>", {})
 keymap.set("n", "<A-p>", ":lua require('harpoon.ui').nav_prev()<CR>", {})
 keymap.set("n", "<leader>c", ":lua require('harpoon.mark').clear_all()<CR>", {})
+
+keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
+keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)
+keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv") -- move line up(v)
+keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv") -- move line down(v)
